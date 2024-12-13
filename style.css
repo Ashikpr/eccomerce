@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'popins',sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: aliceblue;
+    box-shadow:1px 1px 30px black;
+}
+
+.navbar-links{
+    display: flex;
+   column-gap: 20px;
+
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232c;
+}
+.navbar-links a:hover{
+    text-decoration:underline;
+}
+.menu{
+    display: none;
+}
+@media screen and (max-width:600px){
+    .menu{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    
+}
+.side-navbar{
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    transition: 2s;
+
+   
+
+}
+.side-navbar p{
+    margin: 10px;
+    font-size: 20px;
+}
+.side-navbar-links p{
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 10px;
+
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*header*/
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 5%;
+}
+.header button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+   @media screen and (max-width:600px){
+    .img{
+        display: none;
+    }
+    .service-container1 div{
+        display:none;
+    }
+    .service-container2{
+        flex-direction: column;
+    }
+    .contact-element div input{
+
+        width: 25rem;
+        display: inline;
+        text-align: center;
+    
+    }
+    
+
+
+   }
+    /*service*/
+
+    .service{
+        padding: 10px;
+    
+    }
+
+    .service-container1{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .service-container2{
+        
+     display:flex;
+     justify-content: center;
+     gap: 10px;
+        
+    }
+    .service-container2 div{
+        background-color: antiquewhite;
+        padding: 10px;
+        border-radius: 5px;
+        
+    }
+
+    /*product*/
+
+    .new-arrival{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+        flex-wrap: wrap;
+    }
+    .new-arrival-container{
+        position: relative;
+        flex-basis:25%;
+        margin-top: 5px;
+    }
+    .new-arrival-container button{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 10px;
+        position: absolute;
+        left: 15%;
+        bottom: 20%;
+        border-radius: 5px;
+        border: none;
+        
+    
+
+        
+    }
+    .new-arrival-container :hover{
+        background-color: red;
+        color: white;
+    }
+    
+
+    .news-letter{
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
+    .news-letter input{
+        width: 70%;
+        height: 25px;
+        margin-top: 20px;
+        border: 2px solid black;
+    }
+    .letter-btn button{
+        margin: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+    }
+    .news-letter p{
+        margin-top: 10px;
+    }
+    
+
+    .footer-container{
+        background-color: black;
+        color: white;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-container i{
+        font-size:40px
+
+    }
+    .footer-container h1,p,i,h3{
+        margin: 5px;
+    }
+
+    /*product*/
+
+    .product-container input{
+        width: 80%;
+        padding: 10px;
+        margin-top: 30px;
+        margin-left: 10%;
+        border-radius:25px
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        flex-basis: 25%;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    .container h4{
+        text-align: center;
+    }
+
+
+.contact{
+
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-element{
+    background-color: aqua;
+    border-radius: 25px;
+    margin:5%;
+    padding: 10%;
+    display: inline;
+
+
+
+}
+.contact-element input{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    border-radius: 25px;
+    border: none;
+
+}
+.contact-element button{
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+.contact-element h1{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.contact-element h4{
+    margin: 20px;
+}
+
+
+  
